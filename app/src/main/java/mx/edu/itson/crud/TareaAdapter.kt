@@ -36,8 +36,12 @@ class TareaAdapter(
         holder.tvTitulo.text = tarea.titulo
         holder.tvDescripcion.text = tarea.descripcion
 
-        holder.ibtnBorrar.setOnClickListener{
+        holder.cvTarea.setOnClickListener{
             onActualizarClic(tarea)
+        }
+
+        holder.ibtnBorrar.setOnClickListener{
+            onBorrarClic(tarea.id)
         }
     }
 }
